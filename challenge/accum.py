@@ -1,8 +1,8 @@
 
 
 def accum(s, n=0, ret=''):
-    for word in s:
-        ret += (word + word*n).title()
+    for letter in s:
+        ret += (letter + letter*n).title()
         if n+1 != len(s): ret += '-'
         n+=1
     print(ret)
