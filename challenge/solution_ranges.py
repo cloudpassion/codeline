@@ -8,8 +8,7 @@ Test = help.test()
 def solution(args):
 
     _ret = []
-    args.append(0)
-    args.append(0)
+    args.extend([ 0, 0 ])
     n = 0
     while True:
         try:
