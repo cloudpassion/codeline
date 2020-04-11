@@ -15,12 +15,10 @@ def solution(args):
         try:
             cur = args[n]
         except: break
-        print(f'1n:{n}, cur:{cur}')
 
         try:
             new = args[n+1]
         except: break
-        print(f'1n+1:{n+1}, new:{new}')
 
         rz = new - cur
         if rz == 1:
@@ -34,21 +32,12 @@ def solution(args):
                 new = args[n+2]
 
                 app.append(cur)
-                print('tt')
-                print(n+1, cur)
-                print(n+2, new)
                 rz = new - cur
                 n += 1
 
-            print('pex')
-            print(p)
             if p >= 3:
-                print('ppex')
                 _ret.append(str(cur_safe)+'-'+str(cur))
             else:
-
-                print('nopex')
-                print(app)
                 for a in app:
                     _ret.append(str(a))
 
