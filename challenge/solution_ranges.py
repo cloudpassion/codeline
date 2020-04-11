@@ -2,7 +2,7 @@ import help
 
 Test = help.test()
 
-# aaaaa its hard for me
+# aaaa its hard for me
 # need watch how other people solve this task
 
 def solution(args):
