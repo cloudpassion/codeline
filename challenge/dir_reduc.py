@@ -1,5 +1,4 @@
 import help
-import time
 
 test = help.test()
 
@@ -8,7 +7,6 @@ def dirReduc(arr):
     _ret = []
     b = ''.join(arr)
     for i in range(0,len(arr)):
-        #b = b.replace('SOUTHSOUTH','').replace('NORTHNORTH','').replace('WESTWEST','').replace('EASTEAST','')
         b = b.replace('SOUTHNORTH','').replace('NORTHSOUTH','').replace('WESTEAST','').replace('EASTWEST','')
 
     for z in [ 'SOUTH', 'NORTH', 'WEST', 'EAST' ]:
