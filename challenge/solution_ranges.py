@@ -8,7 +8,7 @@ Test = help.test()
 def solution(args):
 
     _ret = []
-    args.extend([ 0, 0 ])
+    args.extend([0, 0])
     n = 0
     while True:
         try:
@@ -23,7 +23,7 @@ def solution(args):
         if rz == 1:
             cur_safe = cur
             p = 1
-            app = [ cur ]
+            app = [cur]
             while rz == 1:
 
                 p += 1
