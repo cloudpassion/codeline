@@ -1,11 +1,17 @@
-class test():
 
-    def describe(self, text):
-        print(text)
-    def it(self, text):
+
+class Test:
+
+    @staticmethod
+    def describe(text):
         print(text)
 
-    def assert_equals(self, a,b, *args):
+    @staticmethod
+    def it(text):
+        print(text)
+
+    @staticmethod
+    def assert_equals(a, b, *args):
         if a == b:
             print('PASS', ': ', str(a), str(b), str(args))
         else:
